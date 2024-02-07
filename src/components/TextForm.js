@@ -12,7 +12,7 @@ export default function TextForm(props) {
   };
 
   const replaceOnClick = () => {
-    let newText = text.replace("arfat", "salfeen");
+    let newText = text.replace(/^\w+/, 'salfeen');
     setText(newText);
   };
 
